@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pretest</title>
+	<script>
+	function GradeCalc(){
+	let a1=document.quiz.q1.value;
+	let a2=document.quiz.q2.value;
+	let a3=document.quiz.q3.value;
+	let a4=document.quiz.q4.value;
+	let grade=0;//Grade is a variable stroring the score//
+	if (a1=="answer"){
+	grade++;}
+	if (a2=="answer"){
+	grade++;}
+	if (a3=="answer"){
+	grade++;}	
+	if (a4=="answer"){
+	grade++;}
+	//(getElementById)IS A FUNCTION USED TO SELECTS AN ELEMENT IN THE html document that has the id "results"...
+	//inner html is to access the content or value of the selected element
+	document.getElementById("results").innerHTML="Your score is "+ grade +" out of 4"
+	}
+	
+	
+	</script>
+</head>
+<body>
+	<h2>knowledge check</h2>
+	<form name="quiz">
+	<p>What are the (5) main parts of an atom?</p>
+	<input type="radio" name="q1" value="flower">stem,leaves,roots,petal,sepals<br>
+	<input type="radio" name="q1" value="body">legs,hands,feet,head,shoulders<br><!--br is to start a new line-->
+	<input type="radio" name="q1" value="answer">nucleus,proton,neutron,electron,electron orbit<br>
+	<p>how do atomic structures relate to the element of the periodic table?</p>
+	<input type="radio" name="q2" value="no">the structure shows a picture which logicly the element its self and the accuracy of the pureness<br>
+	<input type="radio" name="q2" value="answer">Elements are very pure substances therefore atoms are the tiniest piece of matter in the Elements that are able to define them accuratley<br>
+	<input type="radio" name="q2" value="no">none of the above<br>
+	<p>Which 2 atomic structure parts are supposed to be equal?</p>
+	<input type="radio" name="q3" value="answer">Electrons and protons<br>
+	<input type="radio" name="q3" value="no">Electron and nucleus<br>
+	<input type="radio" name="q3" value="no">Head and Toes<br>
+	<p>Which of the following define ISOTOPES?</p>
+	<input type="radio" name="q4" value="eye">Gives us the ability of sight<br>
+	<input type="radio" name="q4" value="answer">Elements that all have the same number of protons but different numbers of neutrons. <br>
+	<input type="radio" name="q4" value="twins">Have the same visual looks and may have the same thoughts,behavior,and thinking<br>
+	
+	<button  type="button"  onclick="GradeCalc()">Submit</button>
+	
+	<p id="results"></p>
+	
+	
+	
+	<!--homework to complete questions-->
+	
+	
+	</form>
+	<table>
+	<tr>
+	
+	</tr>
+</body>
+</html>
+	<p>
+	<a href="Atoms2.html">more information click here</a>
+	</p>
+	<p>
+	<a href="index.html">back to home page</a>
+	</p>
+	<script>
+	alert("you are in the multiple choice quiz you will have 4 questions about what you have read and read carefully to answer . scores will be shown at the end.")
+	</script>
+	</body>
+	
